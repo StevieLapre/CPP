@@ -15,8 +15,8 @@ int main()
     double y = c * d;
     double z = a*b/c+(a-d) * 9;
 
-    double small1 = min(a, b);
-    double maxi1 = max(c, d);
+    double small1 = floor(z);
+    double maxi1 = ceil(z);
 
     cout << maxi1 << endl;
     cout << small1 << endl;
