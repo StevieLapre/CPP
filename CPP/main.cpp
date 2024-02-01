@@ -7,7 +7,7 @@ int main()
 {
     string nummer1 = "Een simpele zin";
 double grootte1 = nummer1.size();
-int vind1 = nummer1.find("zin", 0);
+int vind1 = nummer1.find("sim", 0);
 
     cout << vind1 << endl;
 
