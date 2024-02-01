@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     string nummer1 = "Een simpele zin";
-double grootte1 = nummer1.size();
+double grootte1 = nummer1.max_size();
 
     cout << grootte1 << endl;
 
