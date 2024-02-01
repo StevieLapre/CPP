@@ -1,17 +1,21 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-//text and functions
+//basic of numbers part 1
 int main()
 {
-    string nummer1 = "Een simpele zin";
-double grootte1 = nummer1.size();
-int vind1 = nummer1.find("zin", 0);
-nummer1[0]='g';
-nummer1.clear();
+    double a = 56;
+    double b = 95.27;
+    double c = 24.12;
+    double d = 87.45;
 
-cout << nummer1 << endl;
+    double x = a / b;
+    double y = c * d;
+    double z = a*b/c+(a-d) * 9;
+
+    cout << z << endl;
 
     return 0;
 }
