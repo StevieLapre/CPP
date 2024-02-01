@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//basic of numbers part 1
+//basic of numbers part 2
 int main()
 {
     double a = 56;
@@ -15,7 +15,11 @@ int main()
     double y = c * d;
     double z = a*b/c+(a-d) * 9;
 
-    cout << z << endl;
+    double small1 = min(a, b);
+    double maxi1 = max(c, d);
+
+    cout << maxi1 << endl;
+    cout << small1 << endl;
 
     return 0;
 }
