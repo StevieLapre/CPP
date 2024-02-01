@@ -6,9 +6,10 @@ using namespace std;
 int main()
 {
     string nummer1 = "Een simpele zin";
-double grootte1 = nummer1.max_size();
+double grootte1 = nummer1.size();
+int vind1 = nummer1.find("zin", 0);
 
-    cout << grootte1 << endl;
+    cout << vind1 << endl;
 
     return 0;
 }
