@@ -19,12 +19,14 @@ int main()
     //double maxi1 = ceil(z);
     //double round1 = round(z);
     double pow1 = pow(a,3);
+    double sqa1 = sqrt(a);
 
     //cout << z << endl;
     //cout << small1 << endl;
     //cout << maxi1 << endl;
     //cout << round1 << endl;
     cout << pow1 << endl;
+    cout << sqa1 << endl;
 
     return 0;
 }
