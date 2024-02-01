@@ -2,18 +2,13 @@
 
 using namespace std;
 
-//Basic data storage in strings
+//text and functions
 int main()
 {
-    string animal1 = "Fire Rabbit";
-    string animal2 = " Wood Dragon";
-    string animal3 = "Wood Snake";
-    string zodiac = "Chinese Zodiac";
+    string nummer1 = "Een simpele zin";
+double grootte1 = nummer1.size();
 
-    cout << "This years zodiac animal(2024) is the "<< animal2 << endl;
-    cout << "The previous years zodiac animal(2023) is the "<< animal1 << endl;
-    cout << "The next years zodiac animal(2025) is the "<< animal3 << endl;
-    cout <<"The "<< animal1 <<","<< animal2 <<" and "<< animal3 <<" are all in the "<< zodiac <<" Calender!"<< endl;
+    cout << grootte1 << endl;
 
     return 0;
 }
