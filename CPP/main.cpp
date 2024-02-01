@@ -17,9 +17,12 @@ int main()
 
     double small1 = floor(z);
     double maxi1 = ceil(z);
+    double round1 = round(z);
 
-    cout << maxi1 << endl;
+    cout << z << endl;
     cout << small1 << endl;
+    cout << maxi1 << endl;
+    cout << round1 << endl;
 
     return 0;
 }
