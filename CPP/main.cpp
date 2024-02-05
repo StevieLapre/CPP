@@ -11,6 +11,9 @@ int main()
     cout << "Hoi, waar heb je zin in om vandaag te eten?:";
     string ant1;
     getline(cin,ant1);
-    cout << "Je keuze voor het eten vandaag is " << ant1 << endl;
+    cout << "Hoeveel porties wil je hiervan?:";
+    int ant2;
+    cin >> ant2;
+    cout << "Jou keuze voor het eten vandaag is "<< ant2 << " porties " << ant1 << endl;
     return 0;
 }
