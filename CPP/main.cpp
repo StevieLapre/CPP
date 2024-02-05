@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//practice assignment block 1
+//prompting the user for input and outputting the result
 int main()
 {
     cout << "Hoi, waar heb je zin in om vandaag te eten?:";
