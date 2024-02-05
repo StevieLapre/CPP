@@ -1,32 +1,23 @@
 #include <iostream>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
-//basic of numbers part 2
+//practice assignment block 1
 int main()
 {
-    double a = 56;
-    double b = 95.27;
-    double c = 24.12;
-    double d = 87.45;
-
-    double x = a / b;
-    double y = c * d;
-    double z = a*b/c+(a-d) * 9;
-
-    //double small1 = floor(z);
-    //double maxi1 = ceil(z);
-    //double round1 = round(z);
-    double pow1 = pow(a,3);
-    double sqa1 = sqrt(a);
-
-    //cout << z << endl;
-    //cout << small1 << endl;
-    //cout << maxi1 << endl;
-    //cout << round1 << endl;
-    cout << pow1 << endl;
-    cout << sqa1 << endl;
-
+    string name = "Xavi";
+    int food1 = 4;
+    int food2 = 8;
+    string oef1 = "gesport";
+    int oef2 = 30;
+    int food3 = 320;
+    int cal1 = 560;
+    
+    cout <<"Hello " << name << endl;
+    cout <<"Ik heb " << min(food1, food2) << " stukken pizza gegeten en ze kosten " << max(food1, food2) << " euro totaal." << endl;
+    cout << "Ik heb " << oef1 << " voor " << min(oef2, food3) << " minuten en ik heb " << max(oef2, food3) << " calorieen verbrand." << endl;
+    cout << "ik heb met dit totaal " << cal1-food3 << " calorieen ingenomen" << endl;
     return 0;
 }
