@@ -5,15 +5,21 @@
 
 using namespace std;
 
-//prompting the user for input and outputting the result
+//building a basic food ordering app
 int main()
 {
-    cout << "Hoi, waar heb je zin in om vandaag te eten?:";
-    string ant1;
-    getline(cin,ant1);
-    cout << "Hoeveel porties wil je hiervan?:";
-    int ant2;
-    cin >> ant2;
-    cout << "Jou keuze voor het eten vandaag is "<< ant2 << " porties " << ant1 << endl;
-    return 0;
+  cout << "Welkom bij de voedsel order app!" << endl;
+  cout << "Wat zou je willen bestellen?: " << endl;
+  string best1;
+  getline(cin, best1);
+  cout << "Wat zou je erbij willen drinken?: " << endl;
+  string best2;
+  getline(cin, best2);      
+    cout << "wat is de totale prijs van je " << best1 << "?" << endl;
+    double price1;
+    cin >> price1;
+    cout << "wat is de totale prijs van je " << best2 << "?" << endl;
+    double price2;
+    cin >> price2;
+    cout << "Je hebt besteld: " << best1 << " en " << best2 << ". De totale prijs van je bestelling is: " << price1 + price2 << ",- euro" << endl;
 }
