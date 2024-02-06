@@ -18,6 +18,11 @@ int calc(int calc1, int calc2, int calc3, int calc4){
 
 
 int main() {
-    calc(1, 2, 3, 4 );
+    int out1 = 1;
+    int out2 = 2;
+    int out3 = 3;
+    int out4 = 4;
+    
+    calc(out1, out2, out3, out4);
     return 0;
  }
