@@ -9,17 +9,13 @@ using namespace std;
 //the understanding of IF function part 1
 int main() {
     string val1 = "Ja";
-    string val2 = "Nee";
-    string val3 = "Misschien";
+    int val2 = 5;
+   
     
-    if(val1 == "Nee"){
+    if(val1 == "Ja"&& val2>4){
         cout << "Je hebt gelijk" << endl;
-    } else if(val2 == "Ja"){
-        cout << "Je hebt ongelijk" << endl;
-    } else if(val3 == "nope"){
-        cout << "Je hebt misschien gelijk" << endl;
     } else {
-        cout << "Je hebt geen gelijk" << endl;
+        cout << "Je hebt ongelijk" << endl;
     }
 
 return 0;
