@@ -10,9 +10,10 @@ using namespace std;
 int main() {
     string val1 = "Ja";
     int val2 = 5;
+    int val3 = 6;
    
     
-    if(val1 == "Ja"&& val2>4){
+    if(val1 == "Ja"|| val2>4&&val3==6){
         cout << "Je hebt gelijk" << endl;
     } else {
         cout << "Je hebt ongelijk" << endl;
