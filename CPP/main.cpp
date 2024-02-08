@@ -6,18 +6,24 @@
 
 using namespace std;
 
-//the understanding of IF function part 1
+//the understanding of IF function part 2
 int main() {
-    string val1 = "Ja";
-    int val2 = 5;
-    int val3 = 6;
-   
-    
-    if(val1 == "Ja"|| val2>4&&val3==6){
-        cout << "Je hebt gelijk" << endl;
-    } else {
-        cout << "Je hebt ongelijk" << endl;
-    }
+    cout << "Hou je van pasta?" << endl;
+    string val1;
+    getline(cin, val1);
 
+    cout << "Hou je van sushi?" << endl;
+    string val2;
+    getline(cin, val2);
+
+    if (val1 == "ja" && val2 == "ja") {
+        cout << "Je bent een Yakuza" << endl;
+    } else if (val1 == "ja" && val2 != "ja") {
+        cout << "Je bent een mafia gangster" << endl;
+    } else if (val1 != "ja" && val2 == "ja") {
+        cout << "Je bent een shadow ninja" << endl;
+    } else {
+        cout << "Je bent een zeikerd" << endl;
+    }
 return 0;
- }
+}
