@@ -6,24 +6,29 @@
 
 using namespace std;
 
-//the understanding of IF function part 2
+//creating a coffee selector
 int main() {
-    cout << "Hou je van pasta?" << endl;
-    string val1;
-    getline(cin, val1);
 
-    cout << "Hou je van sushi?" << endl;
-    string val2;
-    getline(cin, val2);
+    double KP = 1.50;
 
-    if (val1 == "ja" && val2 == "ja") {
-        cout << "Je bent een Yakuza" << endl;
-    } else if (val1 == "ja" && val2 != "ja") {
-        cout << "Je bent een mafia gangster" << endl;
-    } else if (val1 != "ja" && val2 == "ja") {
-        cout << "Je bent een shadow ninja" << endl;
+    cout << "Heeft u zin in koffie?" << endl;
+    string ant1;
+    getline(cin, ant1);
+
+    cout << "Geef uw balans op: "<< endl;
+    double bal1;
+    cin>>bal1;
+
+    if (ant1 == "ja" && bal1 >= KP) {
+        cout << "U kunt koffie kopen." << endl;
+        cout << "Uw nieuwe balans is: " << bal1-KP << " euro." << endl;
+    } else if (ant1 == "ja" && bal1 < KP) {
+        cout << "U heeft onvoldoende saldo." << endl;
+        cout << bal1-KP << " euro te kort." << endl;
     } else {
-        cout << "Je bent een zeikerd" << endl;
+        cout << "We wensen U een fijne dag verder." << endl;
     }
+    
+    
 return 0;
 }
