@@ -10,8 +10,10 @@ using namespace std;
 int main() {
 
     //for loop
-    for (int i = 0; i < 50; i+=3) {
-        cout << i << endl;
+int val1 = 50;
+
+    for (int i = 10; i < val1; i+=4) {
+        cout <<"het aangegeven getal "<< i <<" is kleiner dan "<< val1 << endl;
     }
 
     //while loop
