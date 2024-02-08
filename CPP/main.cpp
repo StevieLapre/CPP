@@ -6,29 +6,27 @@
 
 using namespace std;
 
-//creating a coffee selector
+//understanding loops part 1
 int main() {
 
-    double KP = 1.50;
-
-    cout << "Heeft u zin in koffie?" << endl;
-    string ant1;
-    getline(cin, ant1);
-
-    cout << "Geef uw balans op: "<< endl;
-    double bal1;
-    cin>>bal1;
-
-    if (ant1 == "ja" && bal1 >= KP) {
-        cout << "U kunt koffie kopen." << endl;
-        cout << "Uw nieuwe balans is: " << bal1-KP << " euro." << endl;
-    } else if (ant1 == "ja" && bal1 < KP) {
-        cout << "U heeft onvoldoende saldo." << endl;
-        cout << bal1-KP << " euro te kort." << endl;
-    } else {
-        cout << "We wensen U een fijne dag verder." << endl;
+    //for loop
+    for (int i = 0; i < 50; i++) {
+        cout << i << endl;
     }
-    
+
+    //while loop
+    //int i = 0;
+   // while (i < 5) {
+    //    cout << i << endl;
+    //    i++;
+    //}
+
+    //do while loop
+    //int j = 0;
+    //do {
+    //    cout << j << endl;
+    //    j++;
+   // } while (j < 5);
     
 return 0;
 }
