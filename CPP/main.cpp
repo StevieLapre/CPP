@@ -10,7 +10,7 @@ using namespace std;
 int main() {
 
     //for loop
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 50; i+=3) {
         cout << i << endl;
     }
 
