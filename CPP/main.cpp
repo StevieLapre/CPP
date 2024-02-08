@@ -6,29 +6,24 @@
 
 using namespace std;
 
-//understanding loops part 1
+//understanding loops part 2
 int main() {
 
-    //for loop
-int val1 = 50;
+cout << "Geef een wachtwoord op: ";
+string ww;
+getline(cin, ww);
 
-    for (int i = 10; i < val1; i+=4) {
-        cout <<"het aangegeven getal "<< i <<" is kleiner dan "<< val1 << endl;
-    }
+cout << "Geef het wachtwoord nogmaals op: ";
+string ww2;
+getline(cin, ww2);
 
-    //while loop
-    //int i = 0;
-   // while (i < 5) {
-    //    cout << i << endl;
-    //    i++;
-    //}
+while (ww != ww2) {
+    cout << "De wachtwoorden komen niet overeen, probeer het opnieuw: ";
+    getline(cin, ww2);
+}   cout << "U bent succesvol ingelogd!" << endl;
 
-    //do while loop
-    //int j = 0;
-    //do {
-    //    cout << j << endl;
-    //    j++;
-   // } while (j < 5);
-    
+//while loop
+int i = 0;
+
 return 0;
 }
