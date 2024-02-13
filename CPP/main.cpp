@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Final Project part 1
+//Final Project part 2
 int main() {
     
     cout <<"Welkom bij de applicatie" << endl;
