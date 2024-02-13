@@ -27,5 +27,14 @@ int main() {
     string wachtwoord2;
     getline(cin, wachtwoord2);
 
+    while (naam2 != naam && wachtwoord2 != wachtwoord) {
+        cout << "Je gegevens zijn niet correct, probeer het opnieuw" << endl;
+        cout << "Naam: " << endl;
+        getline(cin, naam2);
+        cout << "Wachtwoord: " << endl;
+        getline(cin, wachtwoord2);
+    }
+    cout << "Je bent ingelogd!" << endl;
+
 return 0;
 }
