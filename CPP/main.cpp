@@ -18,6 +18,14 @@ int main() {
     string wachtwoord;
     getline(cin, wachtwoord);
 
+    cout << "Verifieer je gegevens aub!" << endl;
+    cout << "Naam: " << endl;
+    string naam2;
+    getline(cin, naam2);
+
+    cout << "Wachtwoord: " << endl;
+    string wachtwoord2;
+    getline(cin, wachtwoord2);
 
 return 0;
 }
