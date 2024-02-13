@@ -35,6 +35,21 @@ int main() {
         getline(cin, wachtwoord2);
     }
     cout << "Je bent ingelogd!" << endl;
+    double saldo = 5.00;
+    cout << "Je huidige saldo is: " << saldo << " euro" << endl;
+    cout << "Wil je geld opnemen of storten? Y or N?" << endl;
+    string vraag1;
+    getline(cin, vraag1);
+    if (vraag1 == "y" || vraag1 == "Y") {
+        cout << "Hoeveel wil je opnemen of storten?: " << endl;
+        double bedrag;
+        cin >> bedrag;
+        cout << "Je huidige saldo is: " << saldo+bedrag << " euro" << endl;
+    } else {
+        cout << "Bedankt voor het gebruiken van de applicatie" << endl;
+    }
+
+    cout << "Geef uw keuze op wat u wilt bestellen: " << endl;
 
 return 0;
 }
