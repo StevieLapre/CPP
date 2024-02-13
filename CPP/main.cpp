@@ -6,43 +6,18 @@
 
 using namespace std;
 
-//generating different colors with a switch statement
-string kleur(int kleur){
-    string color;
-
-    switch(kleur){
-        case 1:
-            color = "rood";
-            break;
-        case 2:
-            color = "blauw";
-            break;
-        case 3:
-            color = "groen";
-            break;
-        case 4:
-            color = "geel";
-            break;
-        case 5:
-            color = "paars";
-            break;
-        case 6:
-            color = "oranje";
-            break;
-        case 7:
-            color = "zwart";
-            break;
-        case 8:
-            color = "wit";
-            break;
-        default:
-            color = "kleur onbekend";
-            break;
-    }
-    return color;
-}
-
+//Final Project part 1
 int main() {
-    cout << kleur(10) << endl;
+    
+    cout <<"Welkom bij de applicatie" << endl;
+    cout <<"Creeer een account" << endl;
+    cout <<"Voer je naam in: ";
+    string naam;
+    getline(cin, naam);
+    cout <<"creeer een wachtwoord: ";
+    string wachtwoord;
+    getline(cin, wachtwoord);
+
+
 return 0;
 }
