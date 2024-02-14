@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Final Project part 3
+//Final Project part 4
 int main() {
     
     cout <<"Welkom bij de applicatie" << endl;
@@ -65,6 +65,20 @@ int main() {
         cout << "Maak een keuze: " << endl;
         int vraag3;
         cin>>vraag3;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        if (vraag3 == 1) {
+            cout << "Je hebt gekozen voor: " << bestelling[0] << endl;
+            cout << "Je huidige saldo is: " << saldo-prijs[0] << " euro" << endl;
+        } else if (vraag3 == 2) {
+            cout << "Je hebt gekozen voor: " << bestelling[1] << endl;
+            cout << "Je huidige saldo is: " << saldo-prijs[1] << " euro" << endl;
+        } else if (vraag3 == 3) {
+            cout << "Je hebt gekozen voor: " << bestelling[2] << endl;
+            cout << "Je huidige saldo is: " << saldo-prijs[2] << " euro" << endl;
+        } else {
+            cout << "Ongeldige keuze" << endl;
+        }
         
     } else {
         cout << "Bedankt voor het gebruiken van de applicatie" << endl;
