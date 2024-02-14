@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Final Project part 4
+//Final Project part 5
 int main() {
     
     cout <<"Welkom bij de applicatie" << endl;
@@ -44,7 +44,6 @@ int main() {
         cout << "Hoeveel wil je opnemen of storten?: " << endl;
         double bedrag;
         cin >> bedrag;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Je huidige saldo is: " << saldo+bedrag << " euro" << endl;
     } else {
         cout << "Bedankt voor het gebruiken van de applicatie" << endl;
@@ -65,7 +64,13 @@ int main() {
         cout << "Maak een keuze: " << endl;
         int vraag3;
         cin>>vraag3;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        
+
+        while(vraag3 < 1 || vraag3 > 3) {
+            cout << "Ongeldige keuze, probeer het opnieuw" << endl;
+            cout << "Maak een keuze: " << endl;
+            cin>>vraag3;
+          
 
         if (vraag3 == 1) {
             cout << "Je hebt gekozen voor: " << bestelling[0] << endl;
