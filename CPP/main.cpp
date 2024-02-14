@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Final Project part 2
+//Final Project part 3
 int main() {
     
     cout <<"Welkom bij de applicatie" << endl;
@@ -27,7 +27,7 @@ int main() {
     string wachtwoord2;
     getline(cin, wachtwoord2);
 
-    while (naam2 != naam && wachtwoord2 != wachtwoord) {
+    while (naam2 != naam || wachtwoord2 != wachtwoord) {
         cout << "Je gegevens zijn niet correct, probeer het opnieuw" << endl;
         cout << "Naam: " << endl;
         getline(cin, naam2);
@@ -44,12 +44,31 @@ int main() {
         cout << "Hoeveel wil je opnemen of storten?: " << endl;
         double bedrag;
         cin >> bedrag;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Je huidige saldo is: " << saldo+bedrag << " euro" << endl;
     } else {
         cout << "Bedankt voor het gebruiken van de applicatie" << endl;
     }
 
-    cout << "Geef uw keuze op wat u wilt bestellen: " << endl;
+    cout << "Wilt u iets bestellen?" << endl;
+    string vraag2;
+    getline(cin, vraag2);
+    if(vraag2 == "y" || vraag2 == "Y") {
+        cout << "Wat wilt u bestellen?" << endl;
+        string bestelling[]={"Friet", "Sushi", "Pizza"};
+        double prijs[] = {2.50, 5.00, 7.50};
+
+        cout<<"1. "<<bestelling[0]<<":"<<prijs[0]<<" euro"<<endl;
+        cout<<"2. "<<bestelling[1]<<":"<<prijs[1]<<" euro"<<endl;
+        cout<<"3. "<<bestelling[2]<<":"<<prijs[2]<<" euro"<<endl;
+
+        cout << "Maak een keuze: " << endl;
+        int vraag3;
+        cin>>vraag3;
+        
+    } else {
+        cout << "Bedankt voor het gebruiken van de applicatie" << endl;
+    }
 
 return 0;
 }
